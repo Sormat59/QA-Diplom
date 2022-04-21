@@ -1,9 +1,9 @@
 Thumbs.db*
-.DS_Store
-HELP.md
-.gradle
-build/
-
+.DS_Store*
+node_modules
+.idea
+target
+*.iml
 ### STS ###
 .apt_generated
 .classpath
@@ -19,6 +19,8 @@ build/
 *.iml
 *.ipr
 out/
+/postgres-data
+/mysql_data
 
 ### NetBeans ###
 /nbproject/private/
