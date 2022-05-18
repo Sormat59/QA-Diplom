@@ -1,6 +1,7 @@
 package ru.netology.data;
 
 import com.github.javafaker.Faker;
+import io.qameta.allure.Step;
 import lombok.Value;
 
 import java.time.LocalDate;
@@ -25,12 +26,12 @@ public class DataHelper {
         private String cardHolder;
         private String cvv;
     }
-
+@Step("Генерируем данные пользователя с активной картой")
     public static PaymentInfo approvedPayment(int plusMonth) {
         return new PaymentInfo(approvedCard, expiryMonth(plusMonth), expiryYear(plusMonth),
                 getRandomName(), getRandomCVV());
     }
-
+    @Step("Генерируем данные пользователя с не активной картой")
     public static PaymentInfo declinedPayment(int plusMonth) {
         return new PaymentInfo(declinedCard, expiryMonth(plusMonth), expiryYear(plusMonth),
                 getRandomName(), getRandomCVV());
@@ -76,6 +77,11 @@ public class DataHelper {
         Faker fakerRu = new Faker(new Locale("ru"));
         String ruSymbols = fakerRu.name().firstName();
         return ruSymbols;
+    }
+
+    public static String getRandomLatinSymbols() {
+        String latinSymbols = faker.name().firstName();
+        return latinSymbols;
     }
 
 
