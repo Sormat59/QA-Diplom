@@ -11,6 +11,7 @@
 
 - ![Общая страница отчета](https://user-images.githubusercontent.com/93262160/169130144-d50ed979-276f-496f-9e14-75429430d5ca.png)
 
+
 Баг-репорты с описанием выявленных дефектов оформлены в разделе [Issues](https://github.com/Sormat59/QA-Diplom/issues)
 
 ### Общие рекомендации:
