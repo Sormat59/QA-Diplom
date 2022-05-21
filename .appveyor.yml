@@ -12,6 +12,8 @@ install:
   # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
   - java -jar ./artifacts/aqa-shop.jar &
 
+
 build_script:
+  - sleep 7
   - chmod +x gradlew
   - ./gradlew test -Dselenide.headless=true --info  # запускаем тест, флаг --info позволяет выводить больше информации

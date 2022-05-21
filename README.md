@@ -26,3 +26,6 @@
 `docker-compose down`
 
 ### **Ссылки на документацию и отчеты:**
+- [План тестирования](https://github.com/Sormat59/QA-Diplom/blob/master/documentation/Plan.md);
+- [Отчет о проведенном тестировании](https://github.com/Sormat59/QA-Diplom/blob/master/documentation/Report.md);
+- [Отчет об автоматизации тестирования](https://github.com/Sormat59/QA-Diplom/blob/master/documentation/Results.md).
