@@ -10,9 +10,9 @@ build: off  # будем использовать свой скрипт сбор
 
 install:
   # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
-  - chmod +x gradlew
+  -sleep 30
   - docker-compose up -d --build
   - java -jar ./artifacts/aqa-shop.jar &
-build_script:
-  - sleep 15
+  build_script:
+  - chmod +x gradlew
   - ./gradlew clean test allureServe -Dselenide.headless=true --info  # запускаем тест, флаг --info позволяет выводить больше информации
